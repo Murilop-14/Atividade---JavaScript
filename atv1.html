@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cálculo de Média de Notas</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Primeira Nota:"));
+        let n2 = parseFloat(prompt("Segunda Nota:"));
+        let n3 = parseFloat(prompt("Terceira Nota:"));
+        let n4 = parseFloat(prompt("Quarta Nota:"));
+
+        let media = (n1 + n2 + n3 + n4) / 4;
+
+        if (media >= 7) {
+            alert("Aprovado com média: " + media.toFixed(2));
+        } 
+        else {
+            alert("Reprovado com média: " + media.toFixed(2));
+        }
+    </script>
+</body>
+</html>

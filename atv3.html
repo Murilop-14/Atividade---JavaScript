@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <script>    
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+let operacao = prompt("Escolha a operação (+, -, *, /):");
+
+let resultado;
+
+if (operacao === "+") {
+  resultado = num1 + num2;
+  alert(`${num1} + ${num2} = ${resultado}`);
+} else if (operacao === "-") {
+  resultado = num1 - num2;
+  alert(`${num1} - ${num2} = ${resultado}`);
+} else if (operacao === "*") {
+  resultado = num1 * num2;
+  alert(`${num1} * ${num2} = ${resultado}`);
+} else if (operacao === "/") {
+  if (num2 !== 0) {
+    resultado = num1 / num2;
+    alert(`${num1} / ${num2} = ${resultado}`);
+  } else {
+    alert("Erro: divisão por zero não é permitida!");
+  }
+} else {
+  alert("Operação inválida!");
+}
+    </script>
+</body>
+</html>
